@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arshu Customs</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/gen.css" />
+    <link rel="stylesheet" href="styles/cart.css" />
+    <link rel="stylesheet" href="styles/checkout.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/cart.js"></script>
+  </head>
+  <body>
+    <div class="container flex">
+      <form action="">
+      <div class="details flex">
+          <div class="billAddress">
+            <h2>Billing Address</h2>
+            <label class="fa fa-user" ></span> Full Name<input type="text" name="fname" placeholder="Arshu Singh"></label>
+            <label class="fa fa-envelope" ></span> Email<input type="text" name="fname" placeholder="arshusingh@gmail.com"></label>
+            <label class="fa fa-address-card-o" ></span> Address<input type="text" name="fname" placeholder="123 W. House No. 3"></label>
+            <label class="fa fa-institution" ></span> City<input type="text" name="fname" placeholder="New Delhi"></label>
+            <label ></span> Zip<input type="text" name="fname" placeholder="100542"></label>
+            <label ></span> State<input type="text" name="fname" placeholder="Delhi"></label>
+          </div>
+          <div class="payment">
+            <h2>Payment</h2>
+            <label>Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label >Name on Card <input type="text" placeholder="Arshu Singh"></label>
+            <label >Card Number <input type="text" placeholder="1234-1234-1234-1234"></label>
+            <label >Exp Month <input type="text" placeholder="October"></label>
+            <label >Exp Year <input type="text" placeholder="2022"></label>
+            <label >CVV <input type="text" placeholder="399"></label>
+          </div>
+        </div>
+        <button type="submit" class="btn">Continue to Checkout</button>
+      </form>
+      <div class="products-summary">
+        <div class="prodList">
+          <!-- <p> <span class="prodName">My T-shirt 1</span> <span class="price">$99</span> </p> -->
+        </div>
+        <hr>
+        <p> <span class="total">Total</span> <span class="price bold"></span>  </p>
+      </div>
+    </div>
+    <script src="scripts/checkout.js"></script>
+  </body>
+</html>

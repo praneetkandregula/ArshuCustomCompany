@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* -----------------------------upper part starts here-------------------------- */
+
+body {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper {
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+    gap: 150px;
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+/* image-part */
+
+.image {
+    height: 500px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.image img {
+    height: inherit;
+    width: inherit;
+    transition: transform .5s ease-in-out;
+}
+
+.image img:hover {
+    transform: scale(1.2);
+}
+
+
+/* description - right */
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 60vh;
+    margin-top: -70px;
+    padding: 20px;
+}
+
+.fa-star {
+    color: rgb(160, 157, 153);
+}
+
+.checked {
+    color: orange;
+}
+
+.price span {
+    font-size: 18px;
+}
+
+.price>span:first-child {
+    font-weight: bold;
+}
+
+.price>span:nth-child(2) {
+    text-decoration: line-through;
+}
+
+.price>span:last-child {
+    color: rgb(247, 61, 4);
+}
+
+
+/* select-size */
+
+.select-size {
+    width: 300px;
+    word-spacing: 3px;
+    margin-top: 30px;
+}
+
+.select-size>span {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid rgb(236, 230, 230);
+    border-radius: 50%;
+    text-align: center;
+    width: 45px;
+    padding-top: 12px;
+    height: 45px;
+}
+
+.select-size>span:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(5, 4, 87);
+    border-color: rgb(5, 179, 179);
+}
+
+
+/* product-details */
+
+.product-details {
+    margin-top: 30px;
+    width: 600px;
+    font-size: large;
+}
+
+.product-details>p {
+    line-height: 1.5;
+}
+
+
+/* buttons styles */
+
+.button-style {
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
+}
+
+.button-style:hover {
+    cursor: pointer;
+    box-shadow: 0px +5px 10px -3px grey;
+    transform: translate(0px, -5px);
+}
+
+.buy-color {
+    background-color: rgb(253, 168, 40);
+    font-weight: bold;
+}
+
+.buy-buttons {
+    margin-top: 30px;
+}
+
+.cart-color {
+    background-color: rgb(247, 109, 59);
+    font-weight: bold;
+}
+
+@media screen and (max-width:700px) {
+    .upper {
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .image {
+        width: 400px;
+        height: 400px;
+    }
+    .product-details {
+        width: 100%;
+    }
+    .button-style {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .image {
+        width: 300px;
+        height: 300px;
+    }
+    .buy-buttons {
+        text-align: center;
+    }
+}
+
+
+/* ------------------------lower-part------------------------------- */
+
+.lower {
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+.cards {
+    display: flex;
+    margin-top: 40px;
+    gap: 60px;
+    width: 98%;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 1px 2px 5px 1px grey;
+    margin-bottom: 50px;
+}
+
+.card>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 15px;
+}
+
+.card>div>div {
+    display: flex;
+    gap: 3px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.small-size-button {
+    width: 120px;
+}
+
+.view-details-color {
+    background-color: rgb(10, 199, 10);
+    font-weight: bolder;
+}
+
+.card>.image {
+    height: 250px;
+    width: 250px;
+}
+
+@media screen and (max-width:600px) {
+    .lower {
+        margin-left: 20px;
+    }
+    .cards {
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .upper {
+        margin-top: 20px;
+    }
+    .lower {
+        margin-top: 400px;
+    }
+    .image {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:510px) {
+    .lower {
+        margin-top: 500px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .lower {
+        margin-top: 700px;
+    }
+}

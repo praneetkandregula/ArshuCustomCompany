@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arshu Customs</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/gen.css" />
+    <link rel="stylesheet" href="styles/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/cart.js"></script>
+  </head>
+  <body>
+    <header class="header rel">
+      <div class="background abs"></div>
+      <div class="header-container flex abs">
+        <h1 style="font-size: 3em; font-weight: normal">Cart</h1>
+        <p class="breadcrumb large">
+          <a href="#">Home</a> |
+          <a href="#" style="color: #3e9ac3">Cart</a>
+        </p>
+      </div>
+    </header>
+    <!-- <button onclick="storeItem()" >Add Item</button> -->
+    <div class="container" >
+      <div class="item-container flex">
+
+      </div>
+      <div style="text-align: center;" >
+        <a class="checkout breadcrumb xl bold" href="checkout.html">Checkout</a>
+      </div>
+    </div>
+    <div class="emptyCart">
+      <div class="breadcrumb bold xl">Your cart is empty</div>
+      <br /><br /><br />
+      <a style="text-decoration: underline" class="bold xl" href="../T-shirt-designing-product-page-master/products.html"
+        >Go to Product Section</a
+      >
+    </div>
+    <script>
+      getCartItem();
+      let cartItem = document.querySelectorAll(".item-container .item");
+      for (let i = 0; i < cartItem.length; i++) {
+        cartItem[i]
+          .querySelector(".remBtn")
+          .addEventListener("click", function () {
+            removeItem(cartItem[i]);
+          });
+      }
+      let all_inputs = document.querySelectorAll(".item #quantity");
+      for (let i = 0; i < all_inputs.length; i++) {
+        all_inputs[i].addEventListener("input", updateQuantity);
+      }
+    </script>
+    <script>
+      emptyCheck();
+    </script>
+    <br /><br /><br /><br />
+  </body>
+</html>

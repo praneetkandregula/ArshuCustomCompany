@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../Cart&Checkout/scripts/cart.js"></script>
+</head>
+
+<body>
+    <div class="upper">
+        <div class="image">
+            <img src="images/t-shirt.jpg" alt="">
+        </div>
+        <div class="right">
+            <h2>Allen Solly Men's Regular Fit T-Shirt</h2>
+            <div class="ratings">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span> | 20.2k ratings</span>
+            </div>
+            <hr>
+            <div class="price">
+                <span>Rs. 789</span>
+                <span>Rs. 1584</span>
+                <span>(49% OFF)</span>
+            </div>
+            <div class="select-size">
+                <h3>Select Size</h3><br>
+                <span> S </span>
+                <span> M </span>
+                <span> L </span>
+                <span> XL </span>
+                <span> XXL </span>
+            </div>
+            <div class="product-details">
+                <h3>Product Details</h3> <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores labore tempora est necessitatibus. Dolores error obcaecati earum dignissimos placeat in illo! Nulla, earum ea quasi nam asperiores tempore unde cupiditate laboriosam
+                    quam animi repellendus reiciendis! Vitae facilis, exercitationem tempore ducimus aliquid rerum perferendis corporis nesciunt eligendi velit. Error quae minus suscipit iure eligendi omnis veniam numquam cumque, atque quos incidunt doloribus
+                    facilis. Consequatur, fugit? Fugiat ex rerum voluptatibus adipisci nihil esse officia, maiores consequatur. In ipsa provident sint ex at nisi ullam explicabo animi deserunt tempora vitae maiores pariatur eaque, fugit natus numquam
+                    iure dolorum, veritatis quibusdam tempore quos commodi.</p>
+            </div>
+            <div class="buy-buttons">
+                <button onclick="storeItem(`Allen Solly Men's Regular Fit T-Shirt`, 789, `images/t-shirt.jpg`)" class="button-style cart-color">Add to Cart</button>
+                <button onclick="buyFn()" class="button-style buy-color">Buy Now</button>
+                <script>
+                    function buyFn() {
+                        storeItem(`Allen Solly Men's Regular Fit T-Shirt`, 789, `images/t-shirt.jpg`);
+                        window.open('../Cart&Checkout/cart.html', '_parent');
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="lower">
+        <h2>Similar Products</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="image">
+                    <img src="images/t-shirt1.webp" alt="">
+                </div>
+
+                <div>
+                    <p><strong>One last Heist Half Sleeve T-shirt</strong></p>
+                    <p>Rs <span class="price"> 349</span> <strike>Rs 799</strike> (Rs 400 off) </p>
+                    <div>
+                        <button class="button-style view-details-color small-size-button">View Details</button>
+                        <button class="button-style cart-color small-size-button">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="images/t-shirt2.webp" alt="">
+                </div>
+
+                <div>
+                    <p><strong>Hang Loose Relax Half Sleeve T-shirt</strong></p>
+                    <p>Rs <span class="price"> 469</span> <strike>Rs 899</strike> (Rs 436 off) </p>
+                    <div>
+                        <button class="button-style view-details-color small-size-button">View Details</button>
+                        <button class="button-style cart-color small-size-button">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="images/t-shirt3.webp" alt="">
+                </div>
+
+                <div>
+                    <p><strong>Hell no Monday sleeve T-shirt</strong></p>
+                    <p>Rs <span class="price"> 399</span> <strike>Rs 799</strike> (Rs 400 off) </p>
+                    <div>
+                        <button class="button-style view-details-color small-size-button">View Details</button>
+                        <button class="button-style cart-color small-size-button">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="images/t-shirt4.webp" alt="">
+                </div>
+
+                <div>
+                    <p><strong>Sacrifice 2.0 Half Sleeve T-shirt</strong></p>
+                    <p>Rs <span class="price"> 299</span> <strike>Rs 799</strike> (Rs 500 off) </p>
+                    <div>
+                        <button class="button-style view-details-color small-size-button">View Details</button>
+                        <button class="button-style cart-color small-size-button">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="images/t-shirt1.webp" alt="">
+                </div>
+
+                <div>
+                    <p><strong>One last Heist Half Sleeve T-shirt</strong></p>
+                    <p>Rs <span class="price"> 349</span> <strike>Rs 799</strike> (Rs 400 off) </p>
+                    <div>
+                        <button class="button-style view-details-color small-size-button">View Details</button>
+                        <button class="button-style cart-color small-size-button">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="images/t-shirt2.webp" alt="">
+                </div>
+
+                <div>
+                    <p><strong>Hang Loose Relax Half Sleeve T-shirt</strong></p>
+                    <p>Rs <span class="price"> 469</span> <strike>Rs 899</strike> (Rs 436 off) </p>
+                    <div>
+                        <button class="button-style view-details-color small-size-button">View Details</button>
+                        <button class="button-style cart-color small-size-button">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="images/t-shirt3.webp" alt="">
+                </div>
+
+                <div>
+                    <p><strong>Hell no Monday sleeve T-shirt</strong></p>
+                    <p>Rs <span class="price"> 399</span> <strike>Rs 799</strike> (Rs 400 off) </p>
+                    <div>
+                        <button class="button-style view-details-color small-size-button">View Details</button>
+                        <button class="button-style cart-color small-size-button">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="images/t-shirt4.webp" alt="">
+                </div>
+
+                <div>
+                    <p><strong>Sacrifice 2.0 Half Sleeve T-shirt</strong></p>
+                    <p>Rs <span class="price"> 299</span> <strike>Rs 799</strike> (Rs 500 off) </p>
+                    <div>
+                        <button class="button-style view-details-color small-size-button">View Details</button>
+                        <button class="button-style cart-color small-size-button">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="images/t-shirt1.webp" alt="">
+                </div>
+
+                <div>
+                    <p><strong>One last Heist Half Sleeve T-shirt</strong></p>
+                    <p>Rs <span class="price"> 349</span> <strike>Rs 799</strike> (Rs 400 off) </p>
+                    <div>
+                        <button class="button-style view-details-color small-size-button">View Details</button>
+                        <button class="button-style cart-color small-size-button">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="images/t-shirt2.webp" alt="">
+                </div>
+
+                <div>
+                    <p><strong>Hang Loose Relax Half Sleeve T-shirt</strong></p>
+                    <p>Rs <span class="price"> 469</span> <strike>Rs 899</strike> (Rs 436 off) </p>
+                    <div>
+                        <button class="button-style view-details-color small-size-button">View Details</button>
+                        <button class="button-style cart-color small-size-button">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="images/t-shirt3.webp" alt="">
+                </div>
+
+                <div>
+                    <p><strong>Hell no Monday sleeve T-shirt</strong></p>
+                    <p>Rs <span class="price"> 399</span> <strike>Rs 799</strike> (Rs 400 off) </p>
+                    <div>
+                        <button class="button-style view-details-color small-size-button">View Details</button>
+                        <button class="button-style cart-color small-size-button">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="images/t-shirt4.webp" alt="">
+                </div>
+
+                <div>
+                    <p><strong>Sacrifice 2.0 Half Sleeve T-shirt</strong></p>
+                    <p>Rs <span class="price"> 299 <strike>Rs 799</strike> (Rs 500 off) </p>
+                    <div>
+                        <button class="button-style view-details-color small-size-button">View Details</button>
+                        <button class="button-style cart-color small-size-button">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script>
+        let addToCart = document.querySelectorAll('.cart-color');
+        for(let i = 0; i < addToCart.length; i++){
+            addToCart[i].addEventListener('click', function(){
+                let card = this.closest('.card');
+                let name, cost, img, size;
+                name = card.children[1].children[0].innerText;
+                cost = card.querySelector('.price').innerText;
+                img = card.querySelector('.image img').getAttribute('src');
+                storeItem(name, cost, img);
+            })
+        }
+    </script>
+
+
+</body>
+
+</html>
